@@ -31,5 +31,3 @@ def number_of_subscribers(subreddit):
 
     # Returns the total subscribers of the subreddit
     return res.json().get('data').get('subscribers')
-# Testing the Function
-print(number_of_subscribers('Python'))
