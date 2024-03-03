@@ -8,7 +8,6 @@ the function should return 0.
 """
 import requests
 
-
 def number_of_subscribers(subreddit):
     """Returns the total number of subscribers
     for a given subreddit.
