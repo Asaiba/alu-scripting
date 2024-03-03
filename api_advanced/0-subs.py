@@ -8,6 +8,7 @@ the function should return 0.
 """
 import requests
 
+
 def number_of_subscribers(subreddit):
     """Returns the total number of subscribers
     for a given subreddit.
@@ -25,7 +26,7 @@ def number_of_subscribers(subreddit):
                        allow_redirects=False)
 
     # Checks if the subreddit is invalid
-    if res.status_code in [302, 404]:
+    if res.status_code in repr([302, 404]):
         return 0
 
     # Returns the total subscribers of the subreddit
